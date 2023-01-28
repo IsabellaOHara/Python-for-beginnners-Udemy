@@ -1,0 +1,8 @@
+f = open("sample.txt", "w+")
+f.write("Python is cool \n")
+f.writelines(["python \n", "java \n", "adf \n"])
+print("cursor is at", f.tell())
+f.seek(0)
+print("cursor is at", f.tell())
+print(f.read())
+f.close()
